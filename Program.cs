@@ -2,6 +2,16 @@
 using System;
 using System.Linq;
 
+interface Test
+{
+    
+}
+
+enum EnumTest
+{
+    
+}
+
 // Nested namespaces
 namespace X
 {
@@ -18,7 +28,38 @@ namespace X
 
     namespace D
     {
-        
+        class SomeClass
+        {
+            private int x;
+            private bool y;
+
+            protected static int counter;
+
+            protected SomeClass()
+            {
+                
+            }
+
+            public static void main()
+            {
+                
+            }
+
+            private abstract int test(float x, bool what);
+
+
+            private static int Z = 1;
+
+            SomeClass(int a, int b)
+            {
+                
+            }
+        }
+
+        private class AnotherClass
+        {
+            
+        }
     }
 }
 
@@ -51,4 +92,50 @@ namespace Z
         int sum(int a, int b);
         SomeClass hey();
     }
+
+    interface ITest2
+    {
+        void what();
+    }
+
+    interface ITest3
+    {
+
+    }
+
+    namespace A
+    {
+        
+    }
+}
+
+enum What
+{
+    
+}
+
+abstract class Test : SomeClass, SomeClass2, Hey
+{
+    /*
+     * Wild comment block has appeared!
+     */
+
+    private static int x, y, z;
+
+    Test() 
+    {
+        
+    }
+
+    private Test(int a, string str)
+    {
+        
+    }
+
+    public static void Something()
+    {
+        
+    }
+
+    public abstract int SomethingAbstract();
 }
