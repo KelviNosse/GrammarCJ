@@ -29,7 +29,7 @@ namespace Y
         A, B, C, D
     }
 
-    enum Test2
+    private enum Test2
     {
         A = 1, B, C = 4,
     }
@@ -37,8 +37,18 @@ namespace Y
 
 namespace Z
 {
-    enum Test
+    public enum Test
     {
         
-    }   
+    }
+
+    interface ITest : IInterface, ISomething, IDontKnow
+    {
+        string doSomething(string message);
+        void sayHi();
+        bool truthy();
+        float pi();
+        int sum(int a, int b);
+        SomeClass hey();
+    }
 }
