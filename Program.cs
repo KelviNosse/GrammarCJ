@@ -31,7 +31,7 @@ namespace X
         class SomeClass
         {
             private int x;
-            private bool y;
+            private bool[,] y;
 
             protected static int counter;
 
@@ -114,7 +114,7 @@ enum What
     
 }
 
-abstract class Test : SomeClass, SomeClass2, Hey
+abstract class Test : SomeClass2, Hey, System.Some.Thing
 {
     /*
      * Wild comment block has appeared!
@@ -127,9 +127,33 @@ abstract class Test : SomeClass, SomeClass2, Hey
         
     }
 
-    private Test(int a, string str)
+    public static System.Object[][] Function()
     {
         
+    }
+
+    private Test(int a, string str)
+    {
+        while (true)
+        {
+            
+        }
+
+        for (int x = 0, j = 1; true;)
+        {
+            break;
+            continue;
+        }
+
+        foreach (int x in numbers)
+        {
+            break;
+            continue;
+        }
+
+        int x, y, z, i;
+
+        //Console.WriteLine("Hello!");
     }
 
     public static void Something()
@@ -137,5 +161,5 @@ abstract class Test : SomeClass, SomeClass2, Hey
         
     }
 
-    public abstract int SomethingAbstract();
+    public abstract int[][] SomethingAbstract();
 }
