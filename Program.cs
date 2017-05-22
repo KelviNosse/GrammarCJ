@@ -42,7 +42,12 @@ namespace X
 
             public static void main()
             {
-                
+                int[][] jaggedArray2 = new int[][]
+                {
+                    new int[] {1,3,5,7,9},
+                    new int[] {0,2,4,6},
+                    new int[] {11,22}
+                };
             }
 
             private abstract int test(float x, bool what);
@@ -136,16 +141,17 @@ abstract class Test : SomeClass2, Hey, System.Some.Thing
     {
         while (true)
         {
-            
+            int x, y = z = 1, m;
+            //int.Parse("1");
         }
 
-        for (int x = 0, j = 1; true;)
+        for (int x = 0; x < 10; x++)
         {
             break;
             continue;
         }
 
-        foreach (int x in numbers)
+        foreach (var x in numbers)
         {
             break;
             continue;
@@ -162,4 +168,38 @@ abstract class Test : SomeClass2, Hey, System.Some.Thing
     }
 
     public abstract int[][] SomethingAbstract();
+
+
+    public void Slow()
+    {
+        int nthPrime = FindPrimeNumber(1000); //set higher value for more time
+    }
+
+    public int FindPrimeNumber(int n)
+    {
+        int count = 0;
+        int a = 2;
+        while (count < n)
+        {
+            int b = 2;
+            int prime = 1;
+            while (b * b <= a)
+            {
+                if (a % b == 0)
+                {
+                    prime = 0;
+                    break;
+                }
+                something++;
+                b++;
+            }
+            if (prime > 0)
+            {
+                count++;
+            }
+            a++;
+        }
+        return (--a);
+    }
 }
+
